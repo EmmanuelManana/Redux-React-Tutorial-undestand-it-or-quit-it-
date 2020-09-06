@@ -7,7 +7,7 @@ const initialState =  {
         surname: "Manana"
     }
 };
-
+// reduscer =>  pure function
 export const reducer = (state = initialState, action) =>{
     console.table(' ==> state, action <== ', state, action)
 
@@ -20,6 +20,10 @@ export const reducer = (state = initialState, action) =>{
             return {
                 count: state.count + 1
             };
+        case "RESET":
+            return {
+                count: 0
+            }
         default:
             return state;
     }

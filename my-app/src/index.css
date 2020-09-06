@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+#reset{
+  width: 60px;
+}
 
  /* enter dave */
  body {
