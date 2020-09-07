@@ -2,7 +2,7 @@ export const INCREMENT = "INCREMENT";
 export const DECREMET = "DECREMENT";
 export const RESET = "RESET"
 
-//dispatch functions
+//actionc creaters
 export const  decrement =  () => {
     return {type: DECREMET};
 }

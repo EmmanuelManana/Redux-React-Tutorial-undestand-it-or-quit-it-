@@ -34,18 +34,20 @@ class Counter extends React.Component {
         )
     }
 }
-//map state 
+//map state, from the store to props
 const mapStateToProps = (state) =>{
     return  {
         count : state.count
     };
 }
 
-// map dispatch actions
+// map dispatch actions to props
 const mapDispatchToProps = {
     increment,
     decrement,
     reset
 }
 
+// connect = high order function(returns a functions)
+// connects component to the store
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
